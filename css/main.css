@@ -104,7 +104,7 @@ div[class^="weather-"] button {
   padding-top: 1rem;
   height: 5rem;
   width: 90%;
-  padding-left: 1rem;
+  padding-left: 5rem;
   font-size: 2rem;
 }
 
@@ -122,11 +122,13 @@ div[class^="weather-"] button {
 
 .cityWeatherData {
   position: relative;
-  padding-left: 1rem;
+  /*padding-left: 1rem;*/
 
+  margin: auto;
   margin-top: 1rem;
   width: 50%;
   margin-bottom: 1rem;
+
 }
 
 
@@ -165,10 +167,27 @@ tr:hover{
 
 
 #showGeoPosition {
-  width: 50%;
-
-  margin: 0 auto;
+  width: 40%;
+  margin: 1rem auto;
 }
+
+
+
+@media(max-width: 1000px){
+  .cityWeatherData {
+    width:90%;
+    /*float: right;*/
+    margin-right: 1%;
+  }
+
+  #showGeoPosition {
+    width:90%;
+    /*float: right;*/
+    margin-right: 1%;
+  }
+
+}
+
 
 
 .weather-chart {
