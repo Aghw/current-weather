@@ -12,7 +12,6 @@ body {
   flex-direction: column;
 
    background-color: rgb(255, 255, 255);
-   position:relative;
    line-height: 1.5;
    margin: 0 auto;
 }
@@ -166,7 +165,7 @@ tr:hover{
 
 
 #showGeoPosition {
-  width: 50%
+  width: 50%;
 
   margin: 0 auto;
 }
