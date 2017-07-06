@@ -1,0 +1,227 @@
+* {box-sizing: border-box;}
+html {
+  font-family: 'Permanent Marker', sans-serif;
+  line-height: 1.15;
+}
+
+body {
+  position:relative;
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+
+   background-color: rgb(255, 255, 255);
+   position:relative;
+   line-height: 1.5;
+   margin: 0 auto;
+}
+
+
+#primary-content {
+  font-family: 'Permanent Marker', sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  font-weight: lighter;
+  text-align: center;
+  padding: 2rem;
+  color: rgb(163, 134, 19);
+}
+
+#primary-content::first-letter {
+   font-size: 5rem;
+}
+
+header {
+  background-color: rgb(182, 185, 186);
+}
+
+
+
+main {
+  margin: 0 auto;
+  width: 80%;
+  font-family: Quicksand;
+  padding-top: 2rem;
+
+}
+
+
+
+.main-container {
+  margin: 0 auto;
+  width: 100%;
+
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+
+  border-right: 0.05rem dashed lightgray;
+  border-left: 0.05rem dashed lightgray;
+}
+
+
+#weatherInfo {
+  font-family: arial;
+  font-size: 3em;
+  font-weight:bold;
+  text-align: center;
+}
+
+#weatherControls {
+  position: relative;
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  width: 15%;
+  height:  10rem;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-left: 1rem;
+}
+
+
+
+.weather-control-buttons {
+  border: 0.05em solid lightgray;
+  border-radius: 10px;
+}
+
+
+div[class^="weather-"] button {
+  align-self: center;
+  padding: .6rem;
+  background-color: #3D7FCF;
+  border: 1px solid #3D7FCF;
+  border-radius: .3rem;
+  font-size: 1rem;
+  color: white;
+  width: 9rem;
+
+}
+
+#dateTime {
+  padding-top: 1rem;
+  height: 5rem;
+  width: 90%;
+  padding-left: 1rem;
+  font-size: 2rem;
+}
+
+.weather-and-map {
+  margin: 0 auto;
+   width: 100%;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  padding-left: 1rem;
+
+}
+
+
+.cityWeatherData {
+  position: relative;
+  padding-left: 1rem;
+
+  margin-top: 1rem;
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+
+#weatherTable {
+  width: 100%;
+  font-size: 1.25em;
+}
+
+
+td {
+  border: 0.01em solid lightgray;
+  height: 4rem;
+  padding-left: 0.5rem;
+  width: 50%;
+
+}
+tr:nth-child(even) {
+  background: #fff;
+}
+
+tr:nth-child(odd) {
+  background: #e3f2f2;
+}
+
+tr::first-letter {
+  background: #fff;
+}
+
+table td:first-child::first-letter {
+  text-transform: uppercase;
+}
+
+tr:hover{
+  background-color: #dbdad0;
+}
+
+
+#showGeoPosition {
+  width: 50%
+
+  margin: 0 auto;
+}
+
+
+.weather-chart {
+  position: relative;
+  display:flex;
+  width: 40%;
+}
+
+
+
+
+form {
+  margin-left: 5%;
+  padding: 1rem;
+  border: 0.07rem dotted brown;
+  border-radius: 10px;
+  width: 90%;
+}
+
+label:after {
+  content: "";
+  display: table;
+  margin-bottom: 1rem;
+}
+
+#list-tasks {
+  margin-left: 5%;
+  width: 90%;
+}
+
+@media(min-width: 700px){
+  form {
+    width: 38%;
+    float: right;
+  }
+
+  #list-tasks {
+    width:50%;
+    float: right;
+    margin-right: 1%;
+  }
+
+}
+
+
+footer p {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+
+footer {
+  background-color: rgb(182, 185, 186);
+  height: 8rem;
+}
